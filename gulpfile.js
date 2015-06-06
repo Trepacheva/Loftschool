@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     minifyCss = require('gulp-minify-css');
     connect = require('gulp-connect'),
     opn = require('opn'),
+	uglify = require('gulp-uglify'),
     livereload = require('gulp-livereload');
 
 var src = './app/',
@@ -24,7 +25,7 @@ gulp.task('html', function () {
 
     return gulp.src(src + '*.html')
         .pipe(assets)
-        //.pipe(gulpif('*.js', uglify()))
+        .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', minifyCss()))
         .pipe(assets.restore())
         .pipe(useref())

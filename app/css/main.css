@@ -57,8 +57,9 @@ body {
 	Comments IE9 Support (?)
 }
 .logo_link{
+	position: absolute;
 	display: block;
-	padding-top: 39px;
+	top: 39px;
 	float: left;
 }
 .logo_text{
@@ -295,7 +296,7 @@ body {
 }
 
 .login {
-	padding: 22px 24px 18px;
+	padding: 22px 24px 15px;
 	float: left;
 }
 
