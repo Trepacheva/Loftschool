@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<title>	Мои работы </title>
+	<meta name="description" content="Loftschool_Trepacheva"> 
+	<meta name="keywords" content="Loftschool_homework1_trepacheva"> 
+	<meta name="author" content="Trepacheva Antonina"> 
+    <!-- build:css css/style.css -->
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css"> 
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/work.css"> 
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/about-me.css"> 
+    <link rel="stylesheet" href="css/form.css"> 
+    <link rel="stylesheet" href="css/modal.css"> 
+    <link rel="stylesheet" href="css/login.css"> 
+    <link rel="stylesheet" href="css/fira.css">
+    <!-- endbuild -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+<div class="wrapper">
+	<header class="header">
+	<div class="header_container">
+		<a class="logo_link" href="#">
+			<img class="logo_image" src="img/logo.png" alt="Loft School" >
+			<h2 class="logo_text">Сайт портфолио</h2>
+		</a>
+		<ul class="socials">
+			<li class="socials_item">
+				<a href="https://vk.com/id16172171" class="socials_link vk" target="blank"> Вконтакте </a>
+			</li>
+			<li class="socials_item">
+				<a href="https://vk.com/id16172171" class="socials_link fb" target="blank"> Facebook </a>
+			</li>
+			<li class="socials_item">
+				<a href="https://github.com/Trepacheva" class="socials_link git" target="blank"> Github </a>
+			</li>
+		</ul>
+	</div>
+	</header>
+	<div class="content_wrapper">
+		<aside class="left_menu">
+			<nav class="navigation">
+				<ul class="navigation_list">
+					<li class="navigation_item">
+						<a class="navigation_link" href="index.html">Обо мне</a>
+					</li>
+					<li class="navigation_item">
+						<a class="navigation_link" href="work.html">Мои работы</a>
+					</li>
+					<li class="navigation_item navigation_active">
+						<a class="navigation_link" href="contacts.html">Связаться со мной</a>
+					</li>
+				</ul>
+			</nav>
+			<address class="contacts">
+				<div class="contacts_header">Контакты</div>
+          <ul class="contacts_list">             
+             <li class="contacts_item contacts_mail">
+                <a class="contacts_link" href="mailto:av-trepacheva@ya.ru">av-t@yandex.ru</a>
+              </li>
+              <li class="contacts_item contacts_phone">
+                <a class="contacts_link" href="tel:+79160549477">+79160549477</a>
+              </li>
+              <li class="contacts_item contacts_skype">
+                <a class="contacts_link" href="skype:skype_trepacheva">trepacheva</a>
+              </li>
+          </ul>
+			</address>
+		</aside>
+	  <div class="variable_content">
+			<section class="user_info">
+        
+        <div class="contacts_header_wrapper">
+          <h4 class="contacts_header_text">У вас интересный проект? Напишите мне!</h4>
+        </div>                       
+          <div class="user_info_body">
+            <div class="contacts_form_wrapper">
+                <form id="contact-me" class="form contacts_form">   
+                  <div class="form_row clearfix">
+                    <!-- Имя -->
+                    <div class="form_item float_left">
+                      <label for="name" class="label">Имя</label>
+                      <input type="text" name="name" class="input" id="name" placeholder="Как к вам обращаться" qtip-content="Вы не ввели имя">
+                    </div>
+                    <!-- Email -->
+                    <div class="form_item float_right">
+                      <label for="email" class="label">Email</label>
+                      <input type="email" name="email" class="input" id="email" placeholder="Куда мне писать" qtip-position="right" qtip-content="Вы не ввели email">
+                    </div>
+                  </div>
+                  <!-- Сообщение -->
+                  <div class="form_item">
+                    <label for="message" class="label">Сообщение</label>
+                    <textarea name="message" id="message" class="textarea" rows="3" placeholder="Кратко в чем суть" qtip-content="Что вы от меня хотите?"></textarea>
+                  </div>
+                  <!-- Капча -->
+                  <div class="form_item captcha_wrapper clearfix">
+                    <label for="captcha" class="label">Введите код, указанный на картинке</label>
+                    <div class="g-recaptcha" data-sitekey="6Lc8JggTAAAAAOA3-UuKlc1zv7ymGDhOHJNo_pdX"></div>
+                    <img src="img/bg_captcha.jpg" alt="код" class="captcha float_left"/>
+                    <input type="text" name="captcha" class="input input_captcha float_right" id="captcha" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
+                  </div>
+                  <!-- Кнопка "Отправить" -->
+                  <div class="buttons_row">
+                    <button type="submit" class="button">Отправить</button>
+                    <button type="reset" class="button button_reset">Очистить</button>
+                  </div>      
+                </form>
+              </div>
+            </div>      
+
+      </section>
+		</div>
+	</div>
+</div>
+<footer class="footer">
+	<div class='footer_container'>
+		<div class="login">
+       		<a href="login.html" class="login_link">Войти</a>
+   		</div>
+    	<div class="copyright">© 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+    </div>
+</footer> 
+
+<!-- build:js js/scripts.js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src='js/modal.js'></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<!-- endbuild -->
+</body>
+</html>

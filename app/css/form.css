@@ -1,0 +1,119 @@
+ .add_file_lable [type=file] {
+  cursor: inherit;
+  display: block;
+  filter: alpha(opacity=0);
+  width: 1px;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+input, textarea, button {
+	outline: none;
+}
+.label{
+	font-family: 'fira_sansbook';
+	font-size: 17px;
+	color: #959aa8;
+}
+.input, .textarea, .add_file_lable{
+	font-size: 13px;
+ 	color: #48cbe8;
+	border: 1px solid #48cbe8;
+	border-radius: 5px;
+	background-color: #fff;
+	display: block;	
+	width: 100%;
+	padding: 12px 9px;	
+	-webkit-box-sizing: border-box; 
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+}
+.input {
+	height: 41px;
+}
+.textarea{
+	width: 100%;
+	height: 110px;	
+	resize: none;
+}
+.modal_item {
+	margin-bottom: 7px;
+	margin-left: -3px;
+}
+.button_wrapper{
+	text-align: center;
+	margin: 13px auto 6px;
+}
+.button {
+	font-family: 'fira_sansbook';
+	font-size: 19px;
+	color: #fff;
+	border:solid #3ba8c0;
+	border-radius: 5px;
+	background-color: #48cbe8;
+	height: 33px;
+	border-width: 0 0 2px 0;	
+	padding:1px 27px 0px ;
+}
+.button:active {
+	border-top: solid 2px #3ba8c0;	
+}
+.button:hover {
+	border-bottom: none;
+}
+.button_reset{
+	background: #849db5;
+	border-color: #687b8f;
+}
+.button_reset:active {
+	border-top: solid 2px #687b8f;	
+}
+
+/* placeholder */
+*::-webkit-input-placeholder {
+    color: #48cbe8;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #48cbe8;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #48cbe8;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #48cbe8;
+}
+/* Add file*/
+
+.add_file_lable{
+	position: relative;
+	height: 41px;
+	display: inline-block;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: -8px;
+   }
+
+.add_file_lable:after{
+	position: absolute;
+ 	top: 0;
+  	right: 0;
+ 	display: block;
+  	width: 52px;
+  	height: 39px;
+  	content: '';
+  	background: url(../img/add_icon.png)center right 8px no-repeat #48cbe8;
+}
+.add_file_text{
+	position: absolute;
+	top: 9px;
+	cursor: pointer;
+}
+
+/* Add file end */
+
+

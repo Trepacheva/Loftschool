@@ -9,11 +9,17 @@
     <!-- build:css css/style.css -->
     <link rel="stylesheet" href="bower_components/normalize.css/normalize.css"> 
     <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/work.css"> 
+    <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/about-me.css"> 
+    <link rel="stylesheet" href="css/form.css"> 
+    <link rel="stylesheet" href="css/modal.css"> 
+    <link rel="stylesheet" href="css/login.css"> 
     <link rel="stylesheet" href="css/fira.css">
     <!-- endbuild -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+ 
 </head>
 <body>
 <div class="wrapper">
@@ -41,13 +47,13 @@
 			<nav class="navigation">
 				<ul class="navigation_list">
 					<li class="navigation_item navigation_active">
-						<a class="navigation_link" href="#">Обо мне</a>
+						<a class="navigation_link" href="index.html">Обо мне</a>
 					</li>
 					<li class="navigation_item">
-						<a class="navigation_link" href="#">Мои работы</a>
+						<a class="navigation_link" href="work.html">Мои работы</a>
 					</li>
 					<li class="navigation_item">
-						<a class="navigation_link" href="#">Связаться со мной</a>
+						<a class="navigation_link" href="contacts.html">Связаться со мной</a>
 					</li>
 				</ul>
 			</nav>
@@ -139,13 +145,15 @@
 <footer class="footer">
 	<div class='footer_container'>
 		<div class="login">
-       		<a href="/login.html" class="login_link">Войти</a>
+       		<a href="login.html" class="login_link">Войти</a>
    		</div>
     	<div class="copyright">© 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
     </div>
 </footer>
 <!-- build:js js/scripts.js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
+<script src='js/modal.js'></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <!-- endbuild -->
 </body>
 </html>

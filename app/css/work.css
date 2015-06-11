@@ -1,0 +1,147 @@
+/* _____________ Существующие проекты и подписи _________ */
+
+.work_list{
+	margin: 8px 20px 0 -5px;
+    padding: 0;
+ }
+.work_item{
+	position: relative;
+	width: 183px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin-left: 25px;
+	margin-bottom: 38px;
+}
+.overlay{
+	width: 100%;
+	height: 129px;
+	border-radius: 5px;	
+	margin-bottom: 3px;
+
+	transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+	-webkit-transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+	-o-transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+	-moz-transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+}
+.work_img{
+	width: 100%;
+	height: 100%;
+	border: 2px solid #3ba8c0;
+	border-radius: 5px;
+	-moz-opacity:1;
+	opacity:1;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.work_item:hover .work_img{
+	-moz-opacity: 0.20;
+	opacity:.20;
+}
+.work_item:hover .overlay{
+	background-color: #016ca4;
+}
+.animation_block{
+	position:absolute;
+	width: 100%;
+	top: 55px;
+	
+	transform: scale(0);
+	-ms-transform: scale(0);
+	-webkit-transform: scale(0);
+	-o-transform: scale(0);
+	-moz-transform: scale(0);
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	-moz-transition: all 0.1s ;
+}
+ .animation_link {
+	font-family: 'fira_sansbook';
+	font-size: 12px;
+	color: #eff3f7;
+	text-align: center;
+	border: solid 3px #eff3f7;
+	border-radius: 5px;	
+	text-decoration: none;
+	padding: 0 4px;
+}
+.work_item:hover .animation_block {	
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	transition: all 0.7s;
+	-webkit-transition: all 0.7s;
+	-o-transition: all 0.7s;
+	-moz-transition: all 0.7s ;
+}
+.work_link{
+	font-family: 'fira_sanslight_italic';
+	font-size: 13px;
+	color: #3ba8c0;
+	text-decoration: none;
+}
+.work_description{
+	font-size: 15px;
+	margin: 5px 0;
+	line-height: 1.2;
+}
+
+
+.add_new_item{	
+	border: dashed 1px #3ba8c0;
+	border-radius: 4px;
+	height: 128px;
+	text-decoration: none;
+	background: #ecfbff;
+}
+.add_new_item .add_new_link{
+	background: url('../img/add_item_icon.png') center 34px no-repeat; 
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	color: #3ba8c0;
+	font-size: 13px;
+}
+.add_new_item .add_new_text{
+	position: absolute;
+	padding-top: 75px;
+	text-align: center;
+	width: 100%;
+}
+.add_new_item .add_new_link:hover{
+	text-decoration: underline;
+}
+
+
+
+@-webkit-keyframes moveFromBottom {
+	from { -webkit-transform: translateY(200%); opacity: 0;}
+    to { -webkit-transform: translateY(0%) scale(1); opacity: 1;}
+}
+
+@-moz-keyframes moveFromBottom {
+    from { -moz-transform: translateY(200%); opacity: 0;}
+    to { -moz-transform: translateY(0%); opacity: 1;}
+}
+@-ms-keyframes moveFromBottom {
+    from { -ms-transform: translateY(200%); opacity: 0;}
+    to { -ms-transform: translateY(0%); opacity: 1;}
+}
+@-o-keyframes moveFromBottom {
+	from { -o-transform: translateY(200%); opacity: 0;}
+    to { -o-transform: translateY(0%); opacity: 1;}
+}
+@keyframes moveFromBottom {
+	from { transform: translateY(200%); opacity: 0;}
+    to { transform: translateY(0%); opacity: 1;}
+}
+/* _____________ // Добавить проект _________ */
+
+
+/*Прячем модальное окно*/
+#new-project-popup { 
+	display:none; 
+}
+
+

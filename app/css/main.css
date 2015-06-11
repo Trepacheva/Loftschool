@@ -134,7 +134,7 @@ body {
 	overflow: hidden;
 	background: #eff3f7;
 	border-radius: 4px;
-	margin-bottom: 22px;
+	margin-bottom: 24px;
 }
 .navigation_list {
 	list-style: none;
@@ -163,7 +163,7 @@ body {
 	text-decoration: none;
 	color: #959aa8;
 	margin-left: 27px;
-	padding: 22px 0px 20px;
+	padding: 22px 0px 18px;
 }
 .navigation_item:before{
 	content:'';
@@ -207,7 +207,7 @@ body {
 .contacts_link{
 	display: inline-block;	
 	text-decoration: none;
-	padding: 9px 0 9px 0px;
+	padding: 9px 0 8px 0px;
 	line-height: 1.3;
 	font-size: 17px;
 	color: #fff;
@@ -330,10 +330,10 @@ body {
 .text-center{
 	text-align: center;
 }
-.pull-left {
+.float_left {
 	float: left !important;
 }
-.pull-right {
+.float_right {
 	float: right !important;
 }
 

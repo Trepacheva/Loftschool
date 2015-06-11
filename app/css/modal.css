@@ -1,0 +1,51 @@
+
+.modal_bg{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: #58697a;
+	opacity: 0.75;
+	-moz-opacity: 0.75;
+	filter: alpha(opacity=75);
+	z-index: 9998;
+}
+.modal_wrapper{
+	position: absolute;
+	top: 315px;
+	left: 50%;
+	margin-left: -181px;
+	width: 362px;
+	display: block;
+	background: #eff3f7;
+	box-shadow: 0px 6px 13px rgba(13, 16, 7, 0.35);
+	border-radius: 5px;
+	z-index: 9999;
+}
+.modal_header_bg{
+	background: #48cbe8;
+	padding: 6px 13px 0px;
+	border-bottom: 9px solid #67dffa;
+	border-radius: 5px 5px 0 0;
+}
+.button_close{
+	position: absolute;
+	top: 10px;
+	right: 12px;
+	height: 25px;
+	width: 25px;
+	background: url(../img/close_modal.png) no-repeat;
+	border: 0;
+}
+.modal_header{
+	font-family: 'fira_sansregular';
+	font-size: 25px;
+	color: #fff;
+	font-weight: normal;
+	margin: 0;
+}
+.modal_content{
+	padding: 6px 22px 19px;	
+}
+
