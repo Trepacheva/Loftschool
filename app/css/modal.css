@@ -25,7 +25,7 @@
 }
 .modal_header_bg{
 	background: #48cbe8;
-	padding: 6px 13px 0px;
+	padding: 5px 13px 0px;
 	border-bottom: 9px solid #67dffa;
 	border-radius: 5px 5px 0 0;
 }
@@ -46,6 +46,6 @@
 	margin: 0;
 }
 .modal_content{
-	padding: 6px 22px 19px;	
+	padding: 7px 21px 19px 24px;	
 }
 

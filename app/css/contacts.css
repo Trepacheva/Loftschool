@@ -1,16 +1,17 @@
 .contacts_header_wrapper{
 	background: #48cbe8;
 	border-bottom: 17px solid #67dffa;
-	padding: 42px 20px 38px;
+	padding: 42px 20px 37px;
 	border-radius: 5px 5px 0 0;
 	text-align: center;
-	margin-bottom: 41px;
+	margin-bottom: 43px;
 }
 .contacts_header_text{
 	font-family: 'fira_sansbook';
 	font-weight: normal;
 	font-size: 27px;
 	color: #fff;
+	margin: 0px;
 }
 .contacts_form_wrapper{
 	width: 402px;
