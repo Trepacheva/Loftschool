@@ -70,23 +70,23 @@
         </div>                       
           <div class="user_info_body">
             <div class="contacts_form_wrapper">
-                <form id="contact-me" class="form contacts_form">   
+                <form id="login" class="form contacts_form">   
                   <div class="form_row clearfix">
                     <!-- Имя -->
                     <div class="form_item float_left">
                       <label for="name" class="label">Имя</label>
-                      <input type="text" name="name" class="input" id="name" placeholder="Как к вам обращаться" qtip-content="Вы не ввели имя">
+                      <input type="text" name="name" class="input" id="name" placeholder="Как к вам обращаться" data-validation="name">
                     </div>
                     <!-- Email -->
                     <div class="form_item float_right">
                       <label for="email" class="label">Email</label>
-                      <input type="email" name="email" class="input" id="email" placeholder="Куда мне писать" qtip-position="right" qtip-content="Вы не ввели email">
+                      <input type="email" name="email" class="input" id="email" placeholder="Куда мне писать"  data-validation="mail">
                     </div>
                   </div>
                   <!-- Сообщение -->
                   <div class="form_item">
                     <label for="message" class="label">Сообщение</label>
-                    <textarea name="message" id="message" class="textarea" rows="3" placeholder="Кратко в чем суть" qtip-content="Что вы от меня хотите?"></textarea>
+                    <textarea name="message" id="message" class=" input textarea" rows="3" placeholder="Кратко в чем суть" data-validation="text"></textarea>
                   </div>
                   <!-- Капча -->
                   <div class="form_item captcha_wrapper clearfix">
@@ -95,7 +95,7 @@
                   </div>
                   <!-- Кнопка "Отправить" -->
                   <div class="buttons_row">
-                    <button type="submit" class="button">Отправить</button>
+                    <input type="submit" value="Отправить" class="button button_submit"> 
                     <button type="reset" class="button button_reset">Очистить</button>
                   </div>      
                 </form>

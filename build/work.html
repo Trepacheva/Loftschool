@@ -137,16 +137,16 @@
       <div class="modal_header">Добавление проекта</div>
     </div>
     <div class="modal_content">
-      <form id="add-new-project" class="form" role="form">  
+      <form id="login" class="form" role="form">  
         <!-- Название проекта -->
         <div class="modal_item">
           <label for="projectName" class="label">Название проекта</label>
-          <input type="text" name="projectName" class="input" id="projectName" placeholder="Введите название">
+          <input type="text" name="projectName" class="input" id="projectName" placeholder="Введите название" data-validation="project">
         </div>      
         <!-- Картинка проекта -->
         <div class="modal_item">
           <label class="label">Картинка проекта</label>
-          <label class="add_file_lable">
+          <label class="input add_file_lable" data-validation="file">
             <span class="add_file_text">Загрузить изображение</span>
             <input id="filename" type="file" class="input" name="filename" placeholder="Загрузите изображение">
             </label>
@@ -154,16 +154,16 @@
         <!-- URL проекта -->
         <div class="modal_item">
           <label for="projectUrl" class="label">URL проекта</label>
-          <input type="text" name="projectUrl" class="input" id="projectUrl" placeholder="Добавьте ссылку">
+          <input type="text" name="projectUrl" class="input" id="projectUrl" placeholder="Добавьте ссылку" data-validation="link">
         </div>
         <!-- Описание -->
         <div class="modal_item">
           <label for="projectDesc" class="label">Описание</label>
-          <textarea name="text" id="projectDesc" class="textarea" rows="3" placeholder="Пара слов о вашем проекте"></textarea>
+          <textarea name="text" id="projectDesc" class=" input textarea" rows="3" placeholder="Пара слов о вашем проекте" data-validation="about"></textarea>
         </div>
         <!-- Кнопка "Отправить" -->
         <div class="button_wrapper">
-          <button type="submit" class="button">Добавить</button>
+          <input type="submit" value="Отправить" class="button button_submit"> 
         </div>      
       </form>
     </div>
