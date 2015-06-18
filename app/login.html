@@ -18,9 +18,8 @@
     <link rel="stylesheet" href="css/fira.css">
     <!-- endbuild -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-</head>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    </head>
 <body>
 <div class="wrapper">
 	<div class="content_wrapper">
@@ -32,22 +31,61 @@
             <h4 class="modal_header">Авторизуйтесь</h4>
           </div>
           <div class="modal_content">
-            <form id="login" class="form" role="form">   
-                <div class="modal_item">
+            <form id="login" class="form" action="form.php">   
+              <div class="modal_item">
                 <label for="login" class="label">Логин</label>
-                <input type="text" name="login" class="input" id="name" placeholder="Введите логин" qtip-content="Вы не ввели логин">
+                <input type="text" name="login" class="input input_login" id="name" data-validation="login" placeholder="Введите логин">
               </div>
-                <div class="modal_item">
+              <div class="modal_item">
                 <label for="password" class="label">Пароль</label>
-                <input type="password" name="password" class="input" id="password" placeholder="Введите пароль" qtip-content="Вы не ввели пароль">
+               <input type="password" name="password" class="input input_password" id="password" data-validation="password" placeholder="Введите пароль">
               </div>
-              <button type="submit" class="button">Войти</button>    
+              <input type="submit" value="Войти" class="button button_submit">   
             </form>
           </div>   
         </div>   
       </div> 
 	</div>
 </div>
+
+<!--<div class="tooltip_wrapper">
+  <div class="tooltip tooltip_left">
+     <div class="tooltip_text">
+        Содержание тултипа
+     </div>
+  </div>
+</div>
+
+<div class="tooltip_wrapper">
+  <div class="tooltip tooltip_right">
+     <div class="tooltip_text">
+        Содержание тултипа
+     </div>
+  </div>
+</div> -->
+
+  <div class="popup" id="success">
+          <div class="popup_overlay"></div>
+          <div class="popup_content">
+            <div class="popup_content-inner">
+              Ваша заявка отправлена
+            </div>
+            <a class="popup__close" href="#"></a>
+          </div>
+        </div>
+
+        <div class="popup" id="error">
+          <div class="popup_overlay"></div>
+          <div class="popup_content">
+            <div class="popup_content-inner">
+             <span class="error">
+               что то пошло не так, повторите попозже
+             </span>
+            </div>
+            <a class="popup_close" href="#"></a>
+          </div>
+        </div>
+
 <footer class="footer">
 	<div class='footer_container'>
 		<div class="login">
@@ -57,10 +95,15 @@
     </div>
 </footer> 
 
+
+
 <!-- build:js js/scripts.js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="node_modules/jquery-placeholder/jquery.placeholder.js"></script>
 <script src='js/modal.js'></script>
+<script src='js/tooltip.js'></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
+
 <!-- endbuild -->
 </body>
 </html>

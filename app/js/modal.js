@@ -8,4 +8,5 @@ $(document).ready(function() {
 	$('.button_close').click( function(){ 		
 		$('#new-project-popup').css('display', 'none'); 
 	});
+
 });
