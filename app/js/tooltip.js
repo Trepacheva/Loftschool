@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+$('input, textarea').placeholder();
+
 	if ($('.popup').length) {
 		Popups.init()
 	}

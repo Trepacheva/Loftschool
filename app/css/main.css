@@ -11,6 +11,7 @@ body {
 	color: #4a545d;
 }
 
+
 .wrapper{
 	position: relative;
 	min-height: 100%;
@@ -30,6 +31,8 @@ body {
 
 /* Шапка */
 
+
+
 .header_container{
   max-width: 1200px;
   min-width: 960px;
@@ -41,12 +44,14 @@ body {
 	background: #eff3f7;
 	height: 116px;
 }
-.header:after {
+.header:before {
    	content: ' ';
 	display: block;
 	height: 3px;
+	position: absolute;
+	top: 112px;
 	width: 100%;
-	background: #f6fafe; /* Old browsers */
+	background: #2e7285; /* Old browsers */
 	background: -moz-linear-gradient(left, #f6fafe 0%, #1c667a 50%, #f6fafe 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f6fafe), color-stop(50%,#1c667a), color-stop(100%,#f6fafe)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(left, #f6fafe 0%,#1c667a 50%,#f6fafe 100%); /* Chrome10+,Safari5.1+ */
@@ -278,7 +283,7 @@ body {
 	display: block;
 	height: 3px;
 	width: 100%;
-	background: #f6fafe; /* Old browsers */
+	background: #2e7285; /* Old browsers */
 	background: -moz-linear-gradient(left, #f6fafe 0%, #1c667a 50%, #f6fafe 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f6fafe), color-stop(50%,#1c667a), color-stop(100%,#f6fafe)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(left, #f6fafe 0%,#1c667a 50%,#f6fafe 100%); /* Chrome10+,Safari5.1+ */

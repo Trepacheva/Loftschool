@@ -19,8 +19,9 @@
     <!-- endbuild -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-</head>
+    <script src='js/modernizr.custom.18011.js'></script>
+   
+ </head>
 <body>
 <div class="wrapper">
 	<header class="header">
@@ -156,10 +157,10 @@
         <!-- Картинка проекта -->
         <div class="modal_item">
           <label class="label">Картинка проекта</label>
-          <label class="input add_file_lable" data-validation="file">
+          <label class="input add_file_lable add_img" data-validation="file">
             <span class="add_file_text">Загрузить изображение</span>
             <input id="filename" type="file" class="input" name="filename" placeholder="Загрузите изображение">
-            </label>
+          </label>
         </div>
         <!-- URL проекта -->
         <div class="modal_item">
@@ -183,6 +184,7 @@
 
 <!-- build:js js/scripts.js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="js/jquery.placeholder.js"></script>
 <script src='js/modal.js'></script>
 <script src='js/tooltip.js'></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>

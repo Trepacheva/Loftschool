@@ -1,3 +1,5 @@
+
+
  .add_file_lable [type=file] {
   cursor: inherit;
   display: block;
@@ -32,6 +34,7 @@ input, textarea, button {
 }
 .input {
 	height: 41px;
+	color: #48cbe8;
 }
 .textarea{
 	width: 100%;
@@ -174,24 +177,17 @@ border-right-color: #f97e76;
 .error {
   color: firebrick;
   font-weight: bold; }
-.in
+
 /* placeholder */
-*::-webkit-input-placeholder {
-    color: #48cbe8;
-}
-*:-moz-placeholder {
-    /* FF 4-18 */
-    color: #48cbe8;
-}
-*::-moz-placeholder {
-    /* FF 19+ */
-    color: #48cbe8;
-}
-*:-ms-input-placeholder {
-    /* IE 10+ */
-    color: #48cbe8;
-}
-/* Add file*/
+input::-webkit-input-placeholder {color: #48cbe8;}
+input:-moz-placeholder {color: #48cbe8;}
+input::-moz-placeholder {color: #48cbe8;}
+input:-ms-input-placeholder {color: #48cbe8;}
+textarea::-webkit-input-placeholder {color: #48cbe8;}
+textarea:-moz-placeholder {color: #48cbe8;}
+textarea::-moz-placeholder {color: #48cbe8;}
+textarea:-ms-input-placeholder {color: #48cbe8;}
+
 
 .add_file_lable{
 	position: relative;
@@ -200,24 +196,21 @@ border-right-color: #f97e76;
 	cursor: pointer;
 	width: 100%;
 	margin-bottom: -8px;
+	
    }
 
-.add_file_lable:after{
-	position: absolute;
- 	top: 0;
-  	right: 0;
- 	display: block;
-  	width: 52px;
-  	height: 39px;
-  	content: '';
-  	background: url(../img/add_icon.png)center right 8px no-repeat #48cbe8;
-}
+
 .add_file_text{
 	position: absolute;
 	top: 9px;
 	cursor: pointer;
-}
-
+	
+   }
+.add_img{
+	background-image: url(../img/add_file.png);
+   	background-repeat: no-repeat;
+	background-position: right;
+   }
 /* Add file end */
 
 
